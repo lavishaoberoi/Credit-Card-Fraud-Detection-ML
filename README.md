@@ -113,6 +113,7 @@ credit-card-fraud-detection/
 ├── CreditCard_Fraud.ipynb
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 └── images/
 ```
 
