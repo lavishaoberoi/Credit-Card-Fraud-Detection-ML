@@ -6,7 +6,10 @@ This project focuses on detecting fraudulent credit card transactions using mult
 The project includes:
 - Data preprocessing
 - Exploratory Data Analysis (EDA)
+- Feature scaling using StandardScaler
+- Class imbalance handling using SMOTE
 - Model training and evaluation
+- ROC-AUC analysis
 - Accuracy comparison of multiple classifiers
 - Confusion matrix visualization
 
@@ -22,13 +25,13 @@ The dataset used is the popular **Credit Card Fraud Detection Dataset** containi
   - `1` → Fraudulent Transaction
 
 ## Technologies Used
-
 - Python
 - NumPy
 - Pandas
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- Imbalanced-learn (SMOTE)
 
 ## Machine Learning Models Implemented
 - Logistic Regression
@@ -47,20 +50,28 @@ The dataset used is the popular **Credit Card Fraud Detection Dataset** containi
 - Checked dataset shape and missing values
 - Separated features and target labels
 
-### 2. Exploratory Data Analysis
+### 2. Feature Scaling
+- Applied `StandardScaler` to normalize feature values
+- Improved performance of distance-based models like SVM and KNN
+
+### 3. Handling Class Imbalance
+- Used **SMOTE (Synthetic Minority Oversampling Technique)** to balance fraud and normal transaction samples
+- Improved fraud detection capability on minority class transactions
+
+### 4. Exploratory Data Analysis
 - Visualized fraud vs normal transactions
-- Analyzed class imbalance
+- Analyzed dataset imbalance
 
-### 3. Model Training
+### 5. Model Training
 - Split dataset into training and testing sets
-- Trained multiple ML classification models
+- Trained multiple Machine Learning classification models
 
-### 4. Model Evaluation
+### 6. Model Evaluation
 Models were evaluated using:
 - Accuracy Score
 - Confusion Matrix
 - Classification Report
-
+- ROC-AUC Score
 
 ## Results
 ## Model Performance Comparison
@@ -75,16 +86,19 @@ Models were evaluated using:
 | 6    |  Support Vector Machine (SVM)        | 99.79% Accuracy |
 | 7    |  Naive Bayes Classifier              | 98.50% Accuracy |
 
-### Best Performing Model
-- **Random Forest Classifier**
-- Achieved the highest accuracy on the dataset.
 
+### 🏆 Best Performing Model
+**Random Forest Classifier** achieved the highest accuracy among all implemented models.
 
+## ROC-AUC Analysis
+The Random Forest model achieved a **ROC-AUC Score of 0.9366**, indicating excellent capability in distinguishing fraudulent and legitimate transactions.
 
 ## Visualizations
 The project includes:
 - Fraud vs Normal Transaction Count Plot
 - Confusion Matrix Heatmap
+- ROC-AUC Curve
+  
 
 ## Project Structure
 
@@ -96,8 +110,6 @@ credit-card-fraud-detection/
 ├── requirements.txt
 └── images/
 ```
-
----
 
 ## Installation
 
@@ -119,14 +131,10 @@ Run the notebook:
 jupyter notebook
 ```
 
----
 
 ## Future Improvements
-
-- Apply feature scaling
-- Handle class imbalance using SMOTE
-- Add ROC-AUC analysis
-- Deploy using Flask or Streamlit
+- Perform hyperparameter tuning for improved model optimization
+- Deploy the model using Flask or Streamlit
 - Build a real-time fraud detection API
 
 
