@@ -15,6 +15,11 @@ The project includes:
 
 ## Dataset
 The dataset used is the popular **Credit Card Fraud Detection Dataset** containing anonymized transaction features.
+The dataset can be downloaded from Kaggle:
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+After downloading, place `creditcard.csv` in the project directory.
+
 
 ### Dataset Features
 - Numerical transaction features
