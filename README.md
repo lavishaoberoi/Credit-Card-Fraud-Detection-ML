@@ -139,9 +139,9 @@ jupyter notebook
 
 
 ## Future Improvements
-- Perform hyperparameter tuning for improved model optimization
-- Deploy the model using Flask or Streamlit
-- Build a real-time fraud detection API
+- Hyperparameter tuning for improved model optimization
+- Deploying the model using Flask or Streamlit
+- Building a real-time fraud detection API
 
 
 
