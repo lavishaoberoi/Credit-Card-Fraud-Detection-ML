@@ -114,7 +114,7 @@ credit-card-fraud-detection/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-└── images/
+
 ```
 
 ## Installation
